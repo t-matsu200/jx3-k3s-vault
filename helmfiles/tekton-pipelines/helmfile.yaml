@@ -4,13 +4,12 @@ environments:
     values:
     - jx-values.yaml
 namespace: tekton-pipelines
-repositories:
-- name: cdf
-  url: https://github.com/t-matsu200/tekton-helm-chart
 releases:
 - chart: cdf/tekton-pipeline
   version: 0.6.0
   name: tekton-pipeline
+  path: charts/tekton-pipeline
+  repository: https://github.com/t-matsu200/tekton-helm-chart
   values:
   - ../../versionStream/charts/cdf/tekton-pipeline/values.yaml.gotmpl
   - jx-values.yaml
