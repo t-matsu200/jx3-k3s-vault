@@ -20,7 +20,7 @@ spec:
   - key: dev
   - key: staging
   ingress:
-    domain: 172.24.8.165.nip.io
+    domain: 172.24.15.128.nip.io
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .jx.
